@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">🌐</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Our Profile</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#message-us">Message Us</a></li>
+        </ul>
+    </nav>
+
+    <header class="banner">
+        <h1 id="welcome-text">Hi, Guest</h1>
+        <p id="subtitle">Ini adalah website latihan pertama</p>
+    </header>
+
+    <div class="image-placeholder">1386×578</div>
+    <hr>
+
+    <section id="headquarters" class="cards">
+        <h2>Our Headquarter</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="circle"></div>
+                <p>Jakarta</p>
+            </div>
+            <div class="card">
+                <div class="circle"></div>
+                <p>Bandung</p>
+            </div>
+            <div class="card">
+                <div class="circle"></div>
+                <p>Surabaya</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section id="message-us" class="message-section">
+        <div class="form-container">
+            <h2>Message Us</h2>
+            <form id="contactForm">
+                <label>Nama&nbsp;: <input type="text" id="name" placeholder="Nama" required></label>
+                <label>Tanggal Lahir&nbsp;: <input type="date" id="dob" required></label>
+                <fieldset>
+                    <legend>Jenis Kelamin&nbsp;:</legend>
+                    <label><input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki</label>
+                    <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+                </fieldset>
+                <label>Pesan&nbsp;: <textarea id="message" placeholder="Pesan" rows="4" required></textarea></label>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="output-container">
+            <pre id="current-time"></pre>
+            <div id="form-output"></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created By RevoU</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
